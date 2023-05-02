@@ -353,7 +353,7 @@ ul {
     margin-bottom: 1rem;
 }
 
-/* ===========>> MEDIA QUERIES HERO SECTION<<================= */
+/* ===========>> MEDIA QUERIES HERO SECTION TRAINER SECTION PRICING SECTION FOOTER SECTION<<================= */
 @media screen and (max-width: 1440px) {
     .hero__text h1 {
         font-size: 15rem;
@@ -420,6 +420,31 @@ ul {
         padding-bottom: 5rem;
     }
 
+    .price {
+        max-width: 470;
+        width: 70%;
+    }
+
+    .pricing .container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .footer__content {
+        flex-flow: column wrap;
+    }
+
+    .footer__col {
+        margin-top: 3rem;
+    }
+
+    .footer__col:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .footer__title {
+        margin-bottom: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -779,4 +804,167 @@ ul {
     .trainer__title {
         font-size: clamp(40px, 5vw, 50px);
     }
+}
+
+/*================>>>> PRICING <<<<====================*/
+.pricing {
+    background: var(--secondary);
+}
+
+.pricing .container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: grid;
+    place-items: center;
+}
+
+.pricing__title {
+    text-transform: uppercase;
+    font-size: 3.125rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--white);
+}
+
+.pricing__grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 6rem 1rem;
+}
+
+.price {
+    position: relative;
+    min-height: 635px;
+    max-width: 370px;
+    background: var(--primary);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*++++++++>>> OVERFLOW: HIDDEN HIDES ANY IMAGE OVER HEIGHT HIDES CONTENT <<<<<<<=========*/
+    overflow: hidden;
+}
+
+.price__banner {
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    right: -65px;
+    background: var(--accent);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: rotate(26deg)
+}
+
+.price__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    /*========>>>> margin-top: -5rem; <<<<<========*/
+}
+
+.price__price {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.money {
+    font-size: 18px;
+    color: var(--text);
+    font-weight: 300;
+    position: relative;
+    top: -1.5rem;
+    right: -10px;
+}
+
+.price__duration {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text);
+    text-transform: capitalize;
+}
+
+.price__options {
+    margin-top: -2rem;
+    color: var(--text);
+}
+
+.price__option {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--text);
+    text-transform: capitalize;
+    padding: 0.7rem;
+}
+
+/* =========>>>>> .price:nth-child(1) .price__title {
+    margin-top: calc(-5rem + 30px);
+}
+
+.price:nth-child(3) .price__title {
+    margin-top: calc(-5rem + 30px);
+} <<<<=============== */
+
+/*================>>>> FOOTER SECTION <<<<====================*/
+.footer {
+    background: var(--primary);
+}
+
+.footer .container {
+    display: grid;
+    place-items: center;
+    color: white;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.footer__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.footer__link {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: var(--text);
+    display: block;
+    padding: 0.3rem 0;
+    line-height: 1.6;
+}
+
+.footer__link:hover {
+    color: var(--accent);
+}
+
+.footer__copy {
+    background: black;
+    color: var(--white);
+    padding: 2rem;
+}
+
+.footer__copy p {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--white);
+    text-align: center;
 }
